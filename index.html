@@ -1,64 +1,160 @@
 <!DOCTYPE html>
-<html lang="ja"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>MARKET QUALITY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
 <style>
-body{margin:0;background:#f4f2ec;color:#1b1c19;font-family:ui-sans-serif,system-ui,sans-serif}
-.wrap{max-width:880px;margin:0 auto;padding:32px 16px 64px}
-.k{font-size:11px;letter-spacing:.14em;color:#6b6f68}
-h1{font-size:20px;letter-spacing:.08em;font-weight:500;margin:6px 0 16px}
-.v{font-size:40px;color:#c23b2a;margin:6px 0 10px}
-.b{display:inline-block;border:1px solid currentColor;padding:3px 8px;margin:0 6px 8px 0;font-size:11px}
-.card{background:#fff;border:1px solid #e4e0d6;border-radius:16px;padding:18px;margin:12px 0}
-.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #e4e0d6;font-size:14px}
-.m{color:#6b6f68;font-size:12px;line-height:1.6}
+:root{--bg:#041208;--panel:#07160c;--ink:#d7ffc8;--ph:#7cff6b;--dim:#5d8a62;--line:#1a3a22;--hold:#e4b15a;--no:#ff5c4d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Share Tech Mono",ui-monospace,monospace}
+.jp{font-family:"Noto Sans JP",sans-serif}
+a{color:var(--dim);text-decoration:none}
+.rain{position:fixed;inset:0;overflow:hidden;opacity:.5;pointer-events:none;z-index:0}
+.col{position:absolute;top:-60%;display:flex;flex-direction:column;font-size:14px;line-height:1.05;animation:fall linear infinite;text-shadow:0 0 8px #39ff14}
+.g{display:block;color:#1f8f32}.g.h{color:#eaffdf}.g.f{transform:scaleX(-1)}
+@keyframes fall{from{transform:translateY(-15%)}to{transform:translateY(120vh)}}
+main{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:28px 16px 64px}
+h1{margin:6px 0 0;font-weight:500;letter-spacing:.16em;font-size:28px;color:var(--ph)}
+.k{font-size:11px;letter-spacing:.18em;color:var(--ph)}
+.s{font-size:11px;color:var(--dim)}
+.card{background:rgba(7,22,12,.86);border:1px solid var(--line);padding:16px;margin-top:12px}
+.big{font-size:44px;letter-spacing:.12em;color:var(--ph);margin:8px 0 0}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.grid{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+button{min-height:44px;background:transparent;color:var(--dim);border:1px solid var(--line);padding:0 12px;font:inherit;letter-spacing:.12em;cursor:pointer}
+button.on{border-color:var(--ph);color:var(--ph)}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;font-size:11px;color:#6b6f68;padding:8px 6px;border-bottom:1px solid #e4e0d6}
-td{padding:9px 6px;border-bottom:1px solid #e4e0d6;vertical-align:top}
-</style></head><body>
-<div class="wrap">
-<div class="k">MARKET QUALITY · 2026-09-24 終値</div>
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--dim);font-weight:400;font-size:11px;letter-spacing:.12em}
+.hold{color:var(--hold)}.no{color:var(--no)}.ph{color:var(--ph)}
+.tag{border:1px solid;padding:2px 6px;font-size:11px;letter-spacing:.12em}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.big{font-size:32px}}
+@media(prefers-reduced-motion:reduce){.col{animation:none;top:0}}
+</style>
+</head>
+<body>
+<div class="rain" id="rain" aria-hidden="true"></div>
+<main>
+<div class="s">EOD · US EQUITIES</div>
 <h1>MARKET QUALITY</h1>
-<div class="card">
-<div class="k">MARKET STATUS</div>
-<div class="v">先細り</div>
-<div><span class="b" style="color:#c23b2a">MARKET CLOSED</span><span class="b">静観</span></div>
-<p class="m">参加はさらに細い。指数は高値圏のまま。小型は遅れている。型が良くても今は買わない。</p>
-</div>
-<div class="card">
-<div class="row"><span>QQQ</span><span>741.10 · -0.01%</span></div>
-<div class="row"><span>IWM</span><span>281.66 · -0.09%</span></div>
-<div class="row"><span>参加50</span><span>42.6%（前日 44.6%）</span></div>
-<div class="row"><span>基調200</span><span>57.4%</span></div>
-<div class="row"><span>温度</span><span>Fear 35</span></div>
-</div>
-<div class="card">
-<div class="k">銘柄</div>
-<p class="m">点灯 0 · 起点近し 7 · 型待ち 5 · 外す 6。市場が閉じているので点灯なし。</p>
-<table>
-<thead><tr><th>銘柄</th><th>終値</th><th>型</th><th>高値比</th><th>判定</th></tr></thead>
-<tbody>
-<tr><td>NVDA<div class="m">NVIDIA</div></td><td>224.58<div class="m">-0.41%</div></td><td>8/8</td><td>-4.8%</td><td>起点近し</td></tr>
-<tr><td>AMD<div class="m">AMD</div></td><td>629.26<div class="m">+2.38%</div></td><td>8/8</td><td>-0.2%</td><td>型待ち</td></tr>
-<tr><td>AAPL<div class="m">Apple</div></td><td>335.92<div class="m">-0.33%</div></td><td>8/8</td><td>-2.7%</td><td>型待ち</td></tr>
-<tr><td>PANW<div class="m">Palo Alto</div></td><td>389.92<div class="m">-0.86%</div></td><td>8/8</td><td>-2.2%</td><td>型待ち</td></tr>
-<tr><td>CRWD<div class="m">CrowdStrike</div></td><td>259.67<div class="m">-1.07%</div></td><td>8/8</td><td>-1.6%</td><td>型待ち</td></tr>
-<tr><td>ARM<div class="m">Arm</div></td><td>306.34<div class="m">-7.88%</div></td><td>7/8</td><td>-32.3%</td><td>外す</td></tr>
-<tr><td>INTC<div class="m">Intel</div></td><td>127.39<div class="m">+3.91%</div></td><td>7/8</td><td>-10.5%</td><td>起点近し</td></tr>
-<tr><td>ASML<div class="m">ASML</div></td><td>1722.5<div class="m">-1.27%</div></td><td>7/8</td><td>-13.8%</td><td>起点近し</td></tr>
-<tr><td>AMZN<div class="m">Amazon</div></td><td>249.38<div class="m">+0.04%</div></td><td>7/8</td><td>-13.2%</td><td>起点近し</td></tr>
-<tr><td>MU<div class="m">Micron</div></td><td>1080.53<div class="m">+0.81%</div></td><td>7/8</td><td>-13.9%</td><td>起点近し</td></tr>
-<tr><td>PLTR<div class="m">Palantir</div></td><td>192.59<div class="m">+0.42%</div></td><td>7/8</td><td>-7.2%</td><td>起点近し</td></tr>
-<tr><td>MSFT<div class="m">Microsoft</div></td><td>497.93<div class="m">-0.53%</div></td><td>7/8</td><td>-9.3%</td><td>起点近し</td></tr>
-<tr><td>LRCX<div class="m">Lam Research</div></td><td>307.16<div class="m">-0.04%</div></td><td>6/8</td><td>-29.9%</td><td>外す</td></tr>
-<tr><td>META<div class="m">Meta</div></td><td>777.59<div class="m">+4.50%</div></td><td>6/8</td><td>-0.7%</td><td>型待ち</td></tr>
-<tr><td>AMAT<div class="m">Applied Materials</div></td><td>474.25<div class="m">-0.03%</div></td><td>5/8</td><td>-35.8%</td><td>外す</td></tr>
-<tr><td>RKLB<div class="m">Rocket Lab</div></td><td>73.61<div class="m">+4.69%</div></td><td>4/8</td><td>-51.3%</td><td>外す</td></tr>
-<tr><td>TSLA<div class="m">Tesla</div></td><td>377.94<div class="m">-0.57%</div></td><td>3/8</td><td>-24.2%</td><td>外す</td></tr>
-<tr><td>AVGO<div class="m">Broadcom</div></td><td>350.36<div class="m">-1.30%</div></td><td>2/8</td><td>-29.0%</td><td>外す</td></tr>
-</tbody>
-</table>
-</div>
-<p class="m">助言ではない。終値のみ。</p>
-</div>
-</body></html>
+<p class="s jp">地合いデスク · 終値のみ · 助言ではない</p>
+<p class="s" id="asof"></p>
+<section class="card" id="status"></section>
+<section class="card" id="orders"></section>
+<section class="grid" id="meters"></section>
+<section class="card">
+<div class="k">WATCHLIST</div>
+<p class="s jp">銘柄 · 買っていいだけが緑。保留は琥珀。ダメは赤。</p>
+<div id="filters" style="display:flex;flex-wrap:wrap;gap:8px;margin:10px 0"></div>
+<div style="overflow-x:auto"><table id="names"></table></div>
+</section>
+<section class="card">
+<div class="k">SESSION LOG</div>
+<p class="s jp">履歴</p>
+<div style="overflow-x:auto"><table id="log"></table></div>
+</section>
+</main>
+<script>
+const GLYPHS="0123456789ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ";
+const rain=document.getElementById("rain");
+for(let i=0;i<28;i++){
+  const col=document.createElement("span");
+  col.className="col";
+  col.style.left=(i/28*100)+"%";
+  col.style.animationDuration=(8+(i%7))+"s";
+  col.style.animationDelay=(-((i*3)%11))+"s";
+  let html="";
+  const len=16+(i%5);
+  for(let n=0;n<len;n++){
+    const ch=GLYPHS[(i*17+n*11)%GLYPHS.length];
+    const flip=/\D/.test(ch)&&(i+n)%3!==1?" f":"";
+    const head=n===len-1?" h":"";
+    html+=`<span class="g${head}${flip}">${ch}</span>`;
+  }
+  col.innerHTML=html;
+  rain.appendChild(col);
+}
+const fmt=(n,d=2)=>Number(n).toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
+const lamp=s=>s.includes("点灯")?"on":s.includes("起点")?"near":s.includes("型待")?"wait":"skip";
+const marketOpen=m=>/厚み|広い/.test(m)||(/選別/.test(m)&&!/先細|狭い/.test(m));
+const verdict=m=>/厚み|広い/.test(m)?"BROAD":/冷え|売られ/.test(m)?"COLD":(/選別/.test(m)&&!/先細|狭い/.test(m))?"SELECTIVE":"NARROW";
+function planFor(close,fromHi,score){
+  if(score<7||fromHi<-15||fromHi>-3)return null;
+  const high=close/(1+fromHi/100);
+  const kind=fromHi>=-8?"break":"pull";
+  const entryLo=kind==="break"?high:high*0.85;
+  const entryHi=kind==="break"?high*1.02:high*0.92;
+  const stop=kind==="break"?high*0.93:entryLo*0.93;
+  const mid=(entryLo+entryHi)/2, risk=mid-stop;
+  if(!(risk>0))return null;
+  const toHigh=(high-mid)/risk;
+  const useHigh=kind==="pull"&&toHigh>=1;
+  const c=n=>Math.round(n*100)/100;
+  const rr1=useHigh?toHigh:2;
+  return {kind,entryLo:c(entryLo),entryHi:c(entryHi),stop:c(stop),t1:c(useHigh?high:mid+risk*2),t2:c(mid+risk*3),rr1:Math.round(rr1*10)/10,rr2:3};
+}
+const callOf=(n,open)=>lamp(n.status)==="skip"?"no":(open&&planFor(n.close,n.from_hi,n.score)?"buy":"hold");
+let filter="all", openSym=null, DATA=null;
+function render(data){
+  DATA=data;
+  const d=data.desk, open=marketOpen(d.main);
+  document.getElementById("asof").textContent=d.asof+" · "+d.updated;
+  document.getElementById("status").innerHTML=`
+    <div class="k">MARKET STATUS</div><div class="s jp">市場状態</div>
+    <div class="big">${verdict(d.main)}</div>
+    <div class="s jp">${d.main}</div>
+    <p><span class="tag ph">${open?"MARKET OPEN":"MARKET CLOSED"}</span></p>
+    <p class="jp">${d.note||""}</p><p class="s jp">${d.one||""}</p>`;
+  const orders=d.watch.flatMap(n=>{
+    if(callOf(n,open)!=="buy")return [];
+    const p=planFor(n.close,n.from_hi,n.score);
+    return p?[{n,p}]:[];
+  });
+  document.getElementById("orders").innerHTML=`<div class="k">ORDERS</div><div class="s jp">指示 · 買っていいだけ</div>`+(orders.length?orders.map(({n,p})=>`
+    <p class="big">${n.symbol}</p>
+    <div class="s jp">${p.kind==="break"?"BREAKOUT ブレイク":"PULLBACK 押し"}</div>
+    <div class="s">ENTRY · 入り</div><div class="big" style="font-size:32px">${fmt(p.entryLo)} – ${fmt(p.entryHi)}</div>
+    <div class="grid" style="margin-top:10px">
+      <div><div class="s">STOP · 損切</div><div class="no" style="font-size:24px">${fmt(p.stop)}</div></div>
+      <div><div class="s">TARGET · 利確</div><div style="font-size:24px">${fmt(p.t1)} <span class="s">${p.rr1.toFixed(1)}R</span></div></div>
+    </div>
+    <p>RISK / REWARD 1 : ${p.rr1.toFixed(1)} → ${p.rr2.toFixed(1)}</p>`).join(""):`
+    <div class="big" style="color:var(--dim)">NONE</div>
+    <p class="s jp">買っていいが点いた銘柄だけ、ここに出る。</p>`);
+  const q=d.qqq,i=d.iwm,b=d.breadth;
+  document.getElementById("meters").innerHTML=[
+    ["QQQ","ナスダック100",fmt(q.close),`${q.chg>=0?"+":""}${fmt(q.chg)}%`],
+    ["IWM","小型株",fmt(i.close),`${i.chg>=0?"+":""}${fmt(i.chg)}%`],
+    ["BREADTH · 50D","参加",fmt(b.ndxa50,1)+"%","PREV "+fmt(b.ndxa50_prev,1)+"%"],
+    ["REGIME · 200D","基調",fmt(b.ndxa200,1)+"%",(d.fear.label||"")+" "+d.fear.value]
+  ].map(([en,ja,v,sub])=>`<article class="card" style="margin-top:0"><div class="k">${en}</div><div class="s jp">${ja}</div><div class="big" style="font-size:28px">${v}</div><div class="s">${sub}</div></article>`).join("");
+  const fs=[["all","ALL","すべて"],["buy","BUY","買っていい"],["hold","HOLD","保留"],["no","NO","ダメ"]];
+  document.getElementById("filters").innerHTML=fs.map(([id,en,ja])=>`<button data-f="${id}" class="${filter===id?"on":""}">${en} <span class="jp">${ja}</span></button>`).join("");
+  document.querySelectorAll("#filters button").forEach(b=>b.onclick=()=>{filter=b.dataset.f;render(DATA);});
+  const rows=d.watch.filter(n=>filter==="all"||callOf(n,open)===filter);
+  let html=`<thead><tr><th>NAME</th><th>LAST</th><th>TEMPLATE</th><th>FROM HIGH</th><th>CALL</th></tr></thead><tbody>`;
+  for(const w of rows){
+    const c=callOf(w,open);
+    const word=c==="buy"?"買っていい":c==="hold"?"保留":"ダメ";
+    const en=c==="buy"?"BUY":c==="hold"?"HOLD":"NO";
+    const col=c==="no"?"no":c==="hold"?"hold":"ph";
+    const p=planFor(w.close,w.from_hi,w.score);
+    html+=`<tr data-s="${w.symbol}" style="cursor:pointer"><td class="${c==="no"?"no":"ph"}">${w.symbol}<div class="s jp">${w.name}</div></td><td>${fmt(w.close)}<div class="s">${w.chg>=0?"+":""}${fmt(w.chg)}%</div></td><td>${w.score}/8</td><td>${w.from_hi}%</td><td><span class="tag ${col}">${en}</span><div class="jp ${col}">${word}</div>${p?`<div class="s">${p.kind==="break"?"BREAKOUT":"PULLBACK"} ${fmt(p.entryLo)}–${fmt(p.entryHi)}</div>`:""}</td></tr>`;
+    if(openSym===w.symbol){
+      html+=`<tr><td colspan="5" class="jp">${w.why||""}${p?`<div style="margin-top:8px">ENTRY ${fmt(p.entryLo)}–${fmt(p.entryHi)} · STOP ${fmt(p.stop)} · ${fmt(p.t1)} (${p.rr1.toFixed(1)}R) · 1 : ${p.rr1.toFixed(1)} → ${p.rr2.toFixed(1)}<div class="s">${c==="buy"?"これが指示。":"買っていいになると上に出る。"}</div></div>`:""}</td></tr>`;
+    }
+  }
+  html+="</tbody>";
+  const table=document.getElementById("names");
+  table.innerHTML=html;
+  table.querySelectorAll("tr[data-s]").forEach(tr=>tr.onclick=()=>{openSym=openSym===tr.dataset.s?null:tr.dataset.s;render(DATA);});
+  const hist=[...(data.hist||[])].reverse();
+  document.getElementById("log").innerHTML=`<thead><tr><th>DATE</th><th>REGIME</th><th>B50</th><th>B200</th><th>TEMP</th><th>QQQ</th><th>IWM</th></tr></thead><tbody>`+hist.map(r=>`<tr><td class="ph">${r.asof}</td><td>${verdict(r.main)}<div class="s jp">${r.main}</div></td><td>${fmt(r.b50,1)}%</td><td>${fmt(r.b200,1)}%</td><td>${r.fg}</td><td>${fmt(r.qqq)}</td><td>${fmt(r.iwm)}</td></tr>`).join("")+`</tbody>`;
+}
+fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(render).catch(()=>{document.getElementById("status").textContent="データを読めません";});
+</script>
+</body>
+</html>

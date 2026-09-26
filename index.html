@@ -22,7 +22,6 @@ h1{margin:6px 0 0;font-weight:500;letter-spacing:.16em;font-size:28px;color:var(
 .s{font-size:11px;color:var(--dim)}
 .card{background:rgba(7,22,12,.86);border:1px solid var(--line);padding:16px;margin-top:12px}
 .big{font-size:44px;letter-spacing:.12em;color:var(--ph);margin:8px 0 0}
-.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
 .grid{display:grid;gap:12px;grid-template-columns:1fr 1fr}
 button{min-height:44px;background:transparent;color:var(--dim);border:1px solid var(--line);padding:0 12px;font:inherit;letter-spacing:.12em;cursor:pointer}
 button.on{border-color:var(--ph);color:var(--ph)}
@@ -31,6 +30,17 @@ th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertic
 th{color:var(--dim);font-weight:400;font-size:11px;letter-spacing:.12em}
 .hold{color:var(--hold)}.no{color:var(--no)}.ph{color:var(--ph)}
 .tag{border:1px solid;padding:2px 6px;font-size:11px;letter-spacing:.12em}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+#mask{display:none;position:fixed;inset:0;z-index:20;background:rgba(0,8,2,.72)}
+#mask.on{display:block}
+#sheet{display:none;position:fixed;z-index:21;left:50%;top:6vh;transform:translateX(-50%);width:min(640px,92vw);max-height:88vh;overflow:auto;background:#06140b;border:1px solid var(--ph);padding:18px 16px 24px}
+#sheet.on{display:block}
+#sheet h2{margin:0;font-size:18px;letter-spacing:.16em;color:var(--ph)}
+#sheet .grp{margin-top:16px;font-size:11px;letter-spacing:.16em;color:var(--ph)}
+.term{border-bottom:1px solid var(--line);padding:8px 0}
+.term .en{font-size:12px;letter-spacing:.08em;color:var(--ph)}
+.term .ja{font-family:"Noto Sans JP",sans-serif;font-size:14px}
+.term .d{font-family:"Noto Sans JP",sans-serif;font-size:12px;color:#c5ddc0;margin-top:2px;line-height:1.45}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.big{font-size:32px}}
 @media(prefers-reduced-motion:reduce){.col{animation:none;top:0}}
 </style>
@@ -38,16 +48,21 @@ th{color:var(--dim);font-weight:400;font-size:11px;letter-spacing:.12em}
 <body>
 <div class="rain" id="rain" aria-hidden="true"></div>
 <main>
-<div class="s">EOD · US EQUITIES</div>
-<h1>MARKET QUALITY</h1>
-<p class="s jp">地合いデスク · 終値のみ · 助言ではない</p>
-<p class="s" id="asof"></p>
+<div class="head">
+  <div>
+    <div class="s">EOD · US EQUITIES</div>
+    <h1>MARKET QUALITY</h1>
+    <p class="s jp">地合いデスク · 終値のみ · 助言ではない</p>
+    <p class="s" id="asof"></p>
+  </div>
+  <button type="button" id="openTerms">GLOSSARY <span class="jp">用語</span></button>
+</div>
 <section class="card" id="status"></section>
 <section class="card" id="orders"></section>
 <section class="grid" id="meters"></section>
 <section class="card">
 <div class="k">WATCHLIST</div>
-<p class="s jp">銘柄 · 買っていいだけが緑。保留は琥珀。ダメは赤。</p>
+<p class="s jp">銘柄 · 買っていいだけが緑。保留は琥珈。ダメは赤。</p>
 <div id="filters" style="display:flex;flex-wrap:wrap;gap:8px;margin:10px 0"></div>
 <div style="overflow-x:auto"><table id="names"></table></div>
 </section>
@@ -57,6 +72,51 @@ th{color:var(--dim);font-weight:400;font-size:11px;letter-spacing:.12em}
 <div style="overflow-x:auto"><table id="log"></table></div>
 </section>
 </main>
+<div id="mask"></div>
+<aside id="sheet" role="dialog" aria-labelledby="glossTitle" aria-modal="true">
+  <div class="head">
+    <div>
+      <h2 id="glossTitle">GLOSSARY</h2>
+      <p class="s jp">用語 · 市場 → 型 → 位置 → 指示</p>
+    </div>
+    <button type="button" id="closeTerms">CLOSE</button>
+  </div>
+  <div class="grp">MARKET · 市場</div>
+  <div class="term"><div class="en">BREADTH</div><div class="ja">参加</div><p class="d">Nasdaq 100のうち、50日線より上の割合。地合いの本体。</p></div>
+  <div class="term"><div class="en">REGIME</div><div class="ja">基調</div><p class="d">200日線より上の割合。長い流れ。門の開閉には使わない。</p></div>
+  <div class="term"><div class="en">QQQ</div><div class="ja">ナスダック100</div><p class="d">指数そのもの。高値圏でも、参加が細ければ買わない。</p></div>
+  <div class="term"><div class="en">IWM</div><div class="ja">小型株</div><p class="d">遅れていると、上がっているのは一部だけ。</p></div>
+  <div class="term"><div class="en">FEAR & GREED</div><div class="ja">温度</div><p class="d">怖がっているか、熱いか。参考。これでは門は開かない。</p></div>
+  <div class="term"><div class="en">EOD</div><div class="ja">終値</div><p class="d">その日の確定値だけ。日中の値は使わない。</p></div>
+  <div class="term"><div class="en">BROAD</div><div class="ja">厚み</div><p class="d">参加が70%超で、前日より上。市場は開く。</p></div>
+  <div class="term"><div class="en">SELECTIVE</div><div class="ja">選別</div><p class="d">参加が50–70%。市場は開く。良い型だけ。</p></div>
+  <div class="term"><div class="en">NARROW</div><div class="ja">先細り</div><p class="d">参加が30–50%。指数が強くても市場は閉じる。</p></div>
+  <div class="term"><div class="en">COLD</div><div class="ja">冷え</div><p class="d">参加が30%未満。市場は閉じる。</p></div>
+  <div class="term"><div class="en">OPEN / CLOSED</div><div class="ja">開く / 閉じる</div><p class="d">新規の買いを許すか。開くのは厚みと選別だけ。</p></div>
+  <div class="term"><div class="en">STAND ASIDE</div><div class="ja">静観</div><p class="d">今日は買わない。見て、残すだけ。</p></div>
+  <div class="grp">NAME · 銘柄</div>
+  <div class="term"><div class="en">TEMPLATE</div><div class="ja">型</div><p class="d">8条件の点数。7以上だけが候補。</p></div>
+  <div class="term"><div class="en">FROM HIGH</div><div class="ja">高値から</div><p class="d">52週高値からの落ち幅。入り方を分ける位置。</p></div>
+  <div class="term"><div class="en">NO</div><div class="ja no">ダメ · 外す</div><p class="d">5点未満、または高値から25%より遠い。今は見ない。</p></div>
+  <div class="term"><div class="en">WAIT</div><div class="ja hold">型待ち</div><p class="d">潮流はある。形がまだ。または高値の3%以内。</p></div>
+  <div class="term"><div class="en">NEAR</div><div class="ja hold">起点近し</div><p class="d">7点以上で、高値から3–15%。市場が閉じていれば保留。</p></div>
+  <div class="term"><div class="en">LIVE</div><div class="ja">点灯</div><p class="d">起点近しで、市場が開いている。買っていいと同じ。</p></div>
+  <div class="term"><div class="en">HOLD</div><div class="ja hold">保留</div><p class="d">リストには残す。今日は買わない。</p></div>
+  <div class="term"><div class="en">BUY</div><div class="ja">買っていい</div><p class="d">市場・型・位置が揃ったときだけ。緑はこれだけ。</p></div>
+  <div class="term"><div class="en">CHASE</div><div class="ja">追い</div><p class="d">高値の3%以内。途中参加。入り値は出さない。</p></div>
+  <div class="grp">ORDER · 指示</div>
+  <div class="term"><div class="en">ORDERS</div><div class="ja">指示</div><p class="d">買っていいの銘柄だけ、大きく出る値段。</p></div>
+  <div class="term"><div class="en">NONE</div><div class="ja">なし</div><p class="d">今日、買っていいの銘柄はない。</p></div>
+  <div class="term"><div class="en">STANDBY</div><div class="ja">下書き</div><p class="d">保留の行に出る値段。まだ指示ではない。</p></div>
+  <div class="term"><div class="en">BREAKOUT</div><div class="ja">ブレイク</div><p class="d">高値から3–8%。抜けてから、その2%上まで入る。</p></div>
+  <div class="term"><div class="en">PULLBACK</div><div class="ja">押し</div><p class="d">高値から8–15%の帯で入る。</p></div>
+  <div class="term"><div class="en">ENTRY</div><div class="ja">入り</div><p class="d">買ってよい価格の幅。一点ではない。</p></div>
+  <div class="term"><div class="en">STOP</div><div class="ja no">損切</div><p class="d">そこを割れたら、その考えは間違い。</p></div>
+  <div class="term"><div class="en">TARGET</div><div class="ja">利確</div><p class="d">先に置く場所。押しなら戻り高値。ほかは2R。</p></div>
+  <div class="term"><div class="en">RUNNER</div><div class="ja">伸ばす</div><p class="d">残りを3Rまで持つ側。</p></div>
+  <div class="term"><div class="en">R</div><div class="ja">リスクリワード</div><p class="d">損切までの幅を1とした倍数。1 : 2 なら、損の2倍が利。</p></div>
+  <p class="s jp" style="margin-top:14px">想定の値段。助言でも発注でもない。</p>
+</aside>
 <script>
 const GLYPHS="0123456789ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ";
 const rain=document.getElementById("rain");
@@ -77,6 +137,14 @@ for(let i=0;i<28;i++){
   col.innerHTML=html;
   rain.appendChild(col);
 }
+const mask=document.getElementById("mask");
+const sheet=document.getElementById("sheet");
+const openSheet=()=>{mask.classList.add("on");sheet.classList.add("on");};
+const closeSheet=()=>{mask.classList.remove("on");sheet.classList.remove("on");};
+document.getElementById("openTerms").onclick=openSheet;
+document.getElementById("closeTerms").onclick=closeSheet;
+mask.onclick=closeSheet;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeSheet();});
 const fmt=(n,d=2)=>Number(n).toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
 const lamp=s=>s.includes("点灯")?"on":s.includes("起点")?"near":s.includes("型待")?"wait":"skip";
 const marketOpen=m=>/厚み|広い/.test(m)||(/選別/.test(m)&&!/先細|狭い/.test(m));

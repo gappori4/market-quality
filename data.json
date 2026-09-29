@@ -1,1 +1,404 @@
-{"desk":{"asof":"2026-09-28","updated":"2026-09-29 08:00 · 終値","qqq":{"close":736.53,"chg":-1.07,"sma50":712.83,"sma200":664.72,"from_hi":-1.5},"iwm":{"close":280.02,"chg":-0.69,"sma50":293.1,"sma200":274.58,"from_hi":-8.0},"breadth":{"ndxa50":46.53,"ndxa50_prev":46.53,"ndxa200":56.43,"ndxa200_prev":58.41},"fear":{"value":35,"label":"Fear","prev":38},"main":"先細り","move":"静観","note":"参加は30-50%。指数は高値圏から小幅後退。小型は遅れ。","one":"市場は閉じたまま。型が良くても今は買わない。","watch":[{"symbol":"NVDA","name":"NVIDIA","close":228.86,"chg":1.68,"score":8,"from_hi":-3.0,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"AMD","name":"AMD","close":607.87,"chg":-3.61,"score":8,"from_hi":-4.9,"status":"型待ち","why":"潮流は上。縮みを待つ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"AAPL","name":"Apple","close":338.4,"chg":-0.78,"score":8,"from_hi":-2.0,"status":"型待ち","why":"潮流は上。縮みを待つ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"PANW","name":"Palo Alto","close":392.09,"chg":4.63,"score":8,"from_hi":-1.7,"status":"型待ち","why":"潮流は上。縮みを待つ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"CRWD","name":"CrowdStrike","close":259.25,"chg":2.82,"score":8,"from_hi":-1.8,"status":"型待ち","why":"潮流は上。縮みを待つ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"ARM","name":"Arm","close":283.33,"chg":-8.7,"score":6,"from_hi":-37.4,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"INTC","name":"Intel","close":116.03,"chg":-5.67,"score":7,"from_hi":-18.5,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"ASML","name":"ASML","close":1771.41,"chg":1.58,"score":7,"from_hi":-11.3,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"AMZN","name":"Amazon","close":246.15,"chg":-1.41,"score":7,"from_hi":-14.3,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":false},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"MU","name":"Micron","close":1053.98,"chg":-2.61,"score":7,"from_hi":-16.0,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"PLTR","name":"Palantir","close":187.48,"chg":-1.15,"score":7,"from_hi":-9.7,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":false},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"MSFT","name":"Microsoft","close":509.22,"chg":-1.35,"score":7,"from_hi":-7.3,"status":"起点近し","why":"位置は良い。市場が閉じてる","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":false},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"LRCX","name":"Lam Research","close":314.47,"chg":-0.23,"score":6,"from_hi":-28.2,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":false},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"META","name":"Meta","close":715.62,"chg":-4.79,"score":6,"from_hi":-8.2,"status":"型待ち","why":"潮流は上。縮みを待つ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":false},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":false},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]},{"symbol":"AMAT","name":"Applied Materials","close":486.76,"chg":0.36,"score":5,"from_hi":-34.1,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":false},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":false},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"RKLB","name":"Rocket Lab","close":72.19,"chg":-2.38,"score":4,"from_hi":-52.2,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":false},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":false},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":false},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"TSLA","name":"Tesla","close":357.45,"chg":-3.94,"score":3,"from_hi":-28.3,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":false},{"label":"150>200","ok":false},{"label":"200日線上昇","ok":false},{"label":"50>150&200","ok":false},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":false}]},{"symbol":"AVGO","name":"Broadcom","close":349.57,"chg":-0.92,"score":2,"from_hi":-29.1,"status":"外す","why":"土台が足りない","checks":[{"label":"株価>150&200","ok":false},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":false},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":false},{"label":"安値+25%","ok":false},{"label":"高値-25%内","ok":false},{"label":"対QQQ 3ヶ月強い","ok":false}]}]},"hist":[{"asof":"2026-09-23","qqq":741.21,"qqq_chg":-0.84,"iwm":281.92,"iwm_chg":-1.84,"b50":44.55,"b200":57.42,"fg":36,"fg_label":"Fear","main":"先細り","move":"静観","pass7":12,"on":0,"near":7},{"asof":"2026-09-24","qqq":741.1,"qqq_chg":-0.01,"iwm":281.66,"iwm_chg":-0.09,"b50":42.57,"b200":57.42,"fg":35,"fg_label":"Fear","main":"先細り","move":"静観","pass7":12,"on":0,"near":7},{"asof":"2026-09-25","qqq":744.5,"qqq_chg":0.46,"iwm":281.97,"iwm_chg":0.11,"b50":46.53,"b200":58.41,"fg":38,"fg_label":"Fear","main":"先細り","move":"静観","pass7":12,"on":0,"near":7},{"asof":"2026-09-28","qqq":736.53,"qqq_chg":-1.07,"iwm":280.02,"iwm_chg":-0.69,"b50":46.53,"b200":56.43,"fg":35,"fg_label":"Fear","main":"先細り","move":"静観","pass7":11,"on":0,"near":7}]}
+{
+  "desk": {
+    "asof": "2026-09-29",
+    "updated": "2026-09-30 08:07 · 終値",
+    "qqq": {
+      "close": 737.93,
+      "chg": 0.19,
+      "sma50": 713.68,
+      "sma200": 665.28,
+      "from_hi": -1.4
+    },
+    "iwm": {
+      "close": 279.01,
+      "chg": -0.36,
+      "sma50": 292.85,
+      "sma200": 274.71,
+      "from_hi": -8.3
+    },
+    "breadth": {
+      "ndxa50": 47.52,
+      "ndxa50_prev": 46.53,
+      "ndxa200": 53.46,
+      "ndxa200_prev": 56.43
+    },
+    "fear": {
+      "value": 32,
+      "label": "Fear",
+      "prev": 35
+    },
+    "main": "先細り",
+    "move": "静観",
+    "note": "参加は30-50%。指数は高値圏で小幅上昇。小型は遅れ。",
+    "one": "市場は閉じたまま。型が良くても今は買わない。",
+    "watch": [
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA",
+        "close": 227.21,
+        "chg": -0.72,
+        "score": 8,
+        "from_hi": -3.7,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "close": 607.57,
+        "chg": -0.05,
+        "score": 8,
+        "from_hi": -4.9,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "AAPL",
+        "name": "Apple",
+        "close": 329.4,
+        "chg": -2.66,
+        "score": 8,
+        "from_hi": -4.6,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "PANW",
+        "name": "Palo Alto",
+        "close": 388.41,
+        "chg": -0.94,
+        "score": 8,
+        "from_hi": -2.6,
+        "status": "型待ち",
+        "why": "潮流は上。縮みを待つ",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "CRWD",
+        "name": "CrowdStrike",
+        "close": 262.74,
+        "chg": 1.35,
+        "score": 8,
+        "from_hi": -1.8,
+        "status": "型待ち",
+        "why": "潮流は上。縮みを待つ",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "ASML",
+        "name": "ASML",
+        "close": 1834.39,
+        "chg": 3.56,
+        "score": 7,
+        "from_hi": -8.2,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon",
+        "close": 246.67,
+        "chg": 0.21,
+        "score": 7,
+        "from_hi": -14.1,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": false},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "MSFT",
+        "name": "Microsoft",
+        "close": 508.96,
+        "chg": -0.05,
+        "score": 7,
+        "from_hi": -7.3,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": false},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "PLTR",
+        "name": "Palantir",
+        "close": 186.97,
+        "chg": -0.27,
+        "score": 7,
+        "from_hi": -9.9,
+        "status": "起点近し",
+        "why": "位置は良い。市場が閉じてる",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": false},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "MU",
+        "name": "Micron",
+        "close": 1065.08,
+        "chg": 1.05,
+        "score": 7,
+        "from_hi": -15.1,
+        "status": "型待ち",
+        "why": "潮流は上。縮みを待つ",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "INTC",
+        "name": "Intel",
+        "close": 115.93,
+        "chg": -0.09,
+        "score": 7,
+        "from_hi": -18.6,
+        "status": "型待ち",
+        "why": "潮流は上。縮みを待つ",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "META",
+        "name": "Meta",
+        "close": 738.79,
+        "chg": 3.24,
+        "score": 6,
+        "from_hi": -5.3,
+        "status": "型待ち",
+        "why": "潮流は上。縮みを待つ",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": false},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": false},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": true},
+          {"label": "対QQQ 3ヶ月強い", "ok": true}
+        ]
+      },
+      {
+        "symbol": "ARM",
+        "name": "Arm",
+        "close": 293.67,
+        "chg": 3.65,
+        "score": 6,
+        "from_hi": -35.1,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "LRCX",
+        "name": "Lam Research",
+        "close": 323.86,
+        "chg": 2.99,
+        "score": 6,
+        "from_hi": -26.1,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "AMAT",
+        "name": "Applied Materials",
+        "close": 512.01,
+        "chg": 5.19,
+        "score": 6,
+        "from_hi": -30.7,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": true},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": true},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "RKLB",
+        "name": "Rocket Lab",
+        "close": 69.7,
+        "chg": -3.45,
+        "score": 4,
+        "from_hi": -53.8,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": false},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": true},
+          {"label": "50>150&200", "ok": false},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": true},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "name": "Tesla",
+        "close": 352.84,
+        "chg": -1.29,
+        "score": 1,
+        "from_hi": -29.3,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": false},
+          {"label": "150>200", "ok": false},
+          {"label": "200日線上昇", "ok": false},
+          {"label": "50>150&200", "ok": false},
+          {"label": "株価>50", "ok": true},
+          {"label": "安値+25%", "ok": false},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      },
+      {
+        "symbol": "AVGO",
+        "name": "Broadcom",
+        "close": 355.1,
+        "chg": 1.58,
+        "score": 1,
+        "from_hi": -28.0,
+        "status": "外す",
+        "why": "土台が足りない",
+        "checks": [
+          {"label": "株価>150&200", "ok": false},
+          {"label": "150>200", "ok": true},
+          {"label": "200日線上昇", "ok": false},
+          {"label": "50>150&200", "ok": false},
+          {"label": "株価>50", "ok": false},
+          {"label": "安値+25%", "ok": false},
+          {"label": "高値-25%内", "ok": false},
+          {"label": "対QQQ 3ヶ月強い", "ok": false}
+        ]
+      }
+    ]
+  },
+  "hist": [
+    {"asof": "2026-09-23", "qqq": 741.21, "qqq_chg": -0.84, "iwm": 281.92, "iwm_chg": -1.84, "b50": 44.55, "b200": 57.42, "fg": 36, "fg_label": "Fear", "main": "先細り", "move": "静観", "pass7": 12, "on": 0, "near": 7},
+    {"asof": "2026-09-24", "qqq": 741.1, "qqq_chg": -0.01, "iwm": 281.66, "iwm_chg": -0.09, "b50": 42.57, "b200": 57.42, "fg": 35, "fg_label": "Fear", "main": "先細り", "move": "静観", "pass7": 12, "on": 0, "near": 7},
+    {"asof": "2026-09-25", "qqq": 744.5, "qqq_chg": 0.46, "iwm": 281.97, "iwm_chg": 0.11, "b50": 46.53, "b200": 58.41, "fg": 38, "fg_label": "Fear", "main": "先細り", "move": "静観", "pass7": 12, "on": 0, "near": 7},
+    {"asof": "2026-09-28", "qqq": 736.53, "qqq_chg": -1.07, "iwm": 280.02, "iwm_chg": -0.69, "b50": 46.53, "b200": 56.43, "fg": 35, "fg_label": "Fear", "main": "先細り", "move": "静観", "pass7": 11, "on": 0, "near": 7},
+    {"asof": "2026-09-29", "qqq": 737.93, "qqq_chg": 0.19, "iwm": 279.01, "iwm_chg": -0.36, "b50": 47.52, "b200": 53.46, "fg": 32, "fg_label": "Fear", "main": "先細り", "move": "静観", "pass7": 11, "on": 0, "near": 7}
+  ]
+}

@@ -1,1 +1,14 @@
-$(cat /tmp/data.json)
+{
+  "desk": {
+    "asof": "2026-10-13",
+    "updated": "2026-10-14 08:15 · 終値",
+    "qqq": {"close": 743.57, "chg": -0.33, "sma50": 726.1, "sma200": 672.1, "from_hi": -2.5},
+    "iwm": {"close": 276.70, "chg": -0.43, "sma50": 289.5, "sma200": 275.5, "from_hi": -9.1},
+    "breadth": {"ndxa50": 44.55, "ndxa50_prev": 49.0, "ndxa200": 64.35, "ndxa200_prev": 64.0},
+    "fear": {"value": 45, "label": "Neutral", "prev": 46},
+    "main": "先細り",
+    "move": "静観",
+    "note": "参加50は44.55%で前日49.0%から低下。30-50%。QQQは高値圏。",
+    "one": "市場は閉じている。見て、残すだけ。",
+    "watch": [{"symbol":"AAPL","name":"Apple","close":341.27,"chg":0.09,"score":8,"from_hi":-2.0,"status":"型待ち","why":"潮流はある。形がまだ","checks":[{"label":"株価>150&200","ok":true},{"label":"150>200","ok":true},{"label":"200日線上昇","ok":true},{"label":"50>150&200","ok":true},{"label":"株価>50","ok":true},{"label":"安値+25%","ok":true},{"label":"高値-25%内","ok":true},{"label":"対QQQ 3ヶ月強い","ok":true}]}]}
+}

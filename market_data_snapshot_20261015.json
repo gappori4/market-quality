@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "purpose": "Test fetch for existing 8AM Market Quality pipeline integration. Separate file. No secrets, no account data, no order info.",
+    "fetched_at_jst": "2026-10-15T16:42:00+09:00",
+    "fetched_at_utc": "2026-10-15T07:42:00Z",
+    "source_notes": "Sectors from Webull get_market_sectors (US_STOCK, MARKET_VALUE). Note: Webull returns granular industry groups, not the classic 11 S&P GICS sectors (XLRE/XLV/etc.). ETF snapshots from Webull get_stock_snapshot. VIX from public sources (Cboe via MarketWatch/others). Existing data.json and history.json not touched."
+  },
+  "sectors": {
+    "period_definitions": {
+      "D1": "1 trading day change_ratio",
+      "D5": "5 trading days change_ratio",
+      "MO1": "1 month change_ratio"
+    },
+    "change_ratio_unit": "decimal (e.g. -0.0226 = -2.26%)",
+    "target_session_date_approx": "2026-10-14 (US close context)",
+    "D1": [
+      {"id": "7324", "name": "Software & IT Services", "change_ratio": -0.0226, "market_value": 22633439559680},
+      {"id": "7350", "name": "Semiconductors & Semiconductor Equipment", "change_ratio": -0.0395, "market_value": 16893746348032},
+      {"id": "7201", "name": "Banking Services", "change_ratio": -0.0102, "market_value": 8214393913344},
+      {"id": "7373", "name": "Computers, Phones & Household Electronics", "change_ratio": -0.0087, "market_value": 6417368481792},
+      {"id": "7307", "name": "Pharmaceuticals", "change_ratio": 0.0273, "market_value": 5699447291904},
+      {"id": "6397", "name": "Oil & Gas", "change_ratio": 0.0076, "market_value": 4057928826880},
+      {"id": "601922", "name": "Telecommunications Services", "change_ratio": -0.0165, "market_value": 3759459794944},
+      {"id": "6868", "name": "Diversified Retail", "change_ratio": -0.0078, "market_value": 3755933958144},
+      {"id": "6639", "name": "Machinery, Tools, Heavy Vehicles, Trains & Ships", "change_ratio": -0.0232, "market_value": 3499937234944},
+      {"id": "7223", "name": "Investment Banking & Investment Services", "change_ratio": -0.0145, "market_value": 3097866797056},
+      {"id": "7149", "name": "Insurance", "change_ratio": -0.0032, "market_value": 2631066976256}
+    ],
+    "D5": [
+      {"id": "7324", "name": "Software & IT Services", "change_ratio": -0.0046},
+      {"id": "7350", "name": "Semiconductors & Semiconductor Equipment", "change_ratio": -0.0974},
+      {"id": "7201", "name": "Banking Services", "change_ratio": -0.0039},
+      {"id": "7373", "name": "Computers, Phones & Household Electronics", "change_ratio": -0.0060},
+      {"id": "7307", "name": "Pharmaceuticals", "change_ratio": 0.0194},
+      {"id": "6397", "name": "Oil & Gas", "change_ratio": 0.0747},
+      {"id": "601922", "name": "Telecommunications Services", "change_ratio": -0.0717},
+      {"id": "6868", "name": "Diversified Retail", "change_ratio": -0.0073},
+      {"id": "6639", "name": "Machinery, Tools, Heavy Vehicles, Trains & Ships", "change_ratio": -0.0272},
+      {"id": "7223", "name": "Investment Banking & Investment Services", "change_ratio": -0.0161},
+      {"id": "7149", "name": "Insurance", "change_ratio": 0.0229}
+    ],
+    "MO1": [
+      {"id": "7324", "name": "Software & IT Services", "change_ratio": 0.0272},
+      {"id": "7350", "name": "Semiconductors & Semiconductor Equipment", "change_ratio": 0.0250},
+      {"id": "7201", "name": "Banking Services", "change_ratio": -0.0459},
+      {"id": "7373", "name": "Computers, Phones & Household Electronics", "change_ratio": 0.0178},
+      {"id": "7307", "name": "Pharmaceuticals", "change_ratio": 0.0294},
+      {"id": "6397", "name": "Oil & Gas", "change_ratio": 0.0688},
+      {"id": "601922", "name": "Telecommunications Services", "change_ratio": -0.0400},
+      {"id": "6868", "name": "Diversified Retail", "change_ratio": 0.0463},
+      {"id": "6639", "name": "Machinery, Tools, Heavy Vehicles, Trains & Ships", "change_ratio": -0.0015},
+      {"id": "7223", "name": "Investment Banking & Investment Services", "change_ratio": -0.0445},
+      {"id": "7149", "name": "Insurance", "change_ratio": -0.0594}
+    ],
+    "note": "Full lists truncated to top 11 by market_value for this test. Webull returns more granular groups than classic 11 S&P sectors. User Command Center uses XL* ETFs; mapping required on consumer side."
+  },
+  "etf_reference_values": {
+    "note": "Webull snapshot. price = current/extend hour last where available. close = regular session close. trade_status OVN indicates overnight/extended context.",
+    "source": "webull___get_stock_snapshot",
+    "items": [
+      {
+        "symbol": "SPY",
+        "regular_session_close": 769.60,
+        "current_or_extend_hour_price": 767.15,
+        "change": -8.41,
+        "change_ratio": -0.010810,
+        "volume": 55715372,
+        "pre_close": 778.01,
+        "last_trade_time_ms": 1792008000770,
+        "extend_hour_last_trade_time_ms": 1792022392177,
+        "trade_status": "OVN",
+        "session_note": "Regular close vs extended hour distinguished"
+      },
+      {
+        "symbol": "QQQ",
+        "regular_session_close": 728.95,
+        "current_or_extend_hour_price": 722.1857,
+        "change": -14.62,
+        "change_ratio": -0.019662,
+        "volume": 52383557,
+        "pre_close": 743.57,
+        "trade_status": "OVN"
+      },
+      {
+        "symbol": "DIA",
+        "regular_session_close": 515.63,
+        "current_or_extend_hour_price": 515.67,
+        "change": -0.58,
+        "change_ratio": -0.001124,
+        "volume": 3796285,
+        "pre_close": 516.21,
+        "trade_status": "OVN"
+      },
+      {
+        "symbol": "IWM",
+        "regular_session_close": 271.37,
+        "current_or_extend_hour_price": 270.9845,
+        "change": -5.33,
+        "change_ratio": -0.019263,
+        "volume": 38042141,
+        "pre_close": 276.70,
+        "trade_status": "OVN"
+      },
+      {
+        "symbol": "SOXX",
+        "regular_session_close": 519.42,
+        "current_or_extend_hour_price": 508.8252,
+        "change": -24.48,
+        "change_ratio": -0.045008,
+        "volume": 10900469,
+        "pre_close": 543.90,
+        "trade_status": "OVN"
+      },
+      {
+        "symbol": "USO",
+        "regular_session_close": 153.56,
+        "current_or_extend_hour_price": 153.10,
+        "change": 0.47,
+        "change_ratio": 0.003070,
+        "volume": 2976500,
+        "pre_close": 153.09,
+        "trade_status": "OVN"
+      },
+      {
+        "symbol": "GLD",
+        "regular_session_close": 375.99,
+        "current_or_extend_hour_price": 376.92,
+        "change": -5.68,
+        "change_ratio": -0.014882,
+        "volume": 10311132,
+        "pre_close": 381.67,
+        "trade_status": "OVN"
+      }
+    ]
+  },
+  "vix": {
+    "value": 16.87,
+    "target_date": "2026-10-14",
+    "source": "Cboe Volatility Index via MarketWatch / multiple public confirmations (close of 2026-10-14 session)",
+    "change": 1.60,
+    "change_pct": 10.48,
+    "previous_close": 15.27,
+    "note": "Confirmed source and target date. VIXY not used as substitute."
+  }
+}

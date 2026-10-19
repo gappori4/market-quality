@@ -1,1 +1,54 @@
-PLACEHOLDER
+{
+  "desk": {
+    "asof": "2026-10-19",
+    "updated": "2026-10-20 08:15 JST",
+    "qqq": {
+      "close": 718.36,
+      "chg": 8.56,
+      "chg_pct": 1.21
+    },
+    "iwm": {
+      "close": 271.28,
+      "chg": 0.84,
+      "chg_pct": 0.31
+    },
+    "breadth": {
+      "b50": 42.57,
+      "b200": 58.41
+    },
+    "fear": {
+      "value": 23,
+      "label": "Extreme Fear"
+    },
+    "main": "\u5148\u7d30\u308a",
+    "move": "\u9589\u3058\u308b",
+    "note": "\u53c2\u52a050 42.57%\u306748%\u672a\u6e80\u306e\u305f\u3081\u9589\u3058\u308b\u3002\u5730\u5408\u3044\u306f\u5148\u7d30\u308a\u3002\u5e2f\u3067\u7dad\u6301\u3002",
+    "one": "NONE",
+    "watch": {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "close": 342.94,
+      "chg": -0.52,
+      "score": 5,
+      "from_hi": 1.5,
+      "status": "\u578b\u5f85\u3061",
+      "why": "\u9ad8\u5024\u304b\u3089\u7d041.5%\u5185\u3002\u5e02\u5834\u9589\u3058\u306e\u305f\u3081\u70b9\u706f\u305b\u305a\u3002\u4e00\u90e8\u6761\u4ef6\u306f\u672a\u53d6\u5f97\u3002",
+      "checks": [
+        {"label": "\u682a\u4fa1>150&200", "ok": true},
+        {"label": "150>200", "ok": "\u672a\u53d6\u5f97"},
+        {"label": "200\u65e5\u7dda\u7d041\u30f6\u6708\u4e0a\u6607", "ok": "\u672a\u53d6\u5f97"},
+        {"label": "50>150&200", "ok": true},
+        {"label": "\u682a\u4fa1>50", "ok": true},
+        {"label": "\u5b89\u5024+25%", "ok": "\u672a\u53d6\u5f97"},
+        {"label": "\u9ad8\u5024-25%\u5185", "ok": true},
+        {"label": "\u5bfeQQQ 3\u30f6\u6708\u52dd", "ok": "\u672a\u53d6\u5f97"}
+      ]
+    }
+  },
+  "hist": [
+    {"asof": "2026-10-14", "qqq": 728.95, "qqq_chg": -1.97, "iwm": 271.37, "iwm_chg": -1.93, "b50": 40.0, "b200": 62.4, "fg": 34.29, "fg_label": "Fear", "main": "\u5148\u7d30\u308a", "move": "\u9589\u3058\u308b", "pass7": 0, "on": 0, "near": 1},
+    {"asof": "2026-10-15", "qqq": 728.0, "qqq_chg": -0.13, "iwm": 275.08, "iwm_chg": 1.37, "b50": 50.0, "b200": 58.6, "fg": 29.46, "fg_label": "Fear", "main": "\u9078\u5225", "move": "\u9589\u3058\u308b", "pass7": 0, "on": 0, "near": 1},
+    {"asof": "2026-10-16", "qqq": 709.8, "qqq_chg": -2.5, "iwm": 270.44, "iwm_chg": -1.69, "b50": 37.0, "b200": 55.6, "fg": 21.7, "fg_label": "Extreme Fear", "main": "\u51b7\u3048", "move": "\u9589\u3058\u308b", "pass7": 0, "on": 0, "near": 1},
+    {"asof": "2026-10-19", "qqq": 718.36, "qqq_chg": 1.21, "iwm": 271.28, "iwm_chg": 0.31, "b50": 42.57, "b200": 58.41, "fg": 23, "fg_label": "Extreme Fear", "main": "\u5148\u7d30\u308a", "move": "\u9589\u3058\u308b", "pass7": 0, "on": 0, "near": 1}
+  ]
+}

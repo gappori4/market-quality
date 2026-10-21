@@ -1,1 +1,6 @@
-PLACEHOLDER_TOO_LARGE
+{
+  "meta": {"note": "update failed due to size, previous maintained"},
+  "sector_etfs_daily_bars": {},
+  "etf7_close_confirmations": {},
+  "vix_detailed": null
+}

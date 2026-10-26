@@ -1,1 +1,8 @@
-PLACEHOLDER_LARGE
+{
+  "meta": {
+    "fetched_at_utc": "2026-10-26T23:11:48Z",
+    "purpose": "supplement for market quality analysis"
+  },
+  "sector_etfs_daily_bars": {},
+  "etf7_close_confirmations": {}
+}

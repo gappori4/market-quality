@@ -1,38 +1,38 @@
 {
   "desk": {
-    "asof": "2026-11-05",
-    "updated": "2026-11-06 08:10 JST",
+    "asof": "2026-11-06",
+    "updated": "2026-11-07 08:11 JST",
     "qqq": {
-      "close": 647.05,
-      "chg": -44.9,
-      "chg_pct": -6.49
+      "close": 656.10,
+      "chg": 9.05,
+      "chg_pct": 1.40
     },
     "iwm": {
-      "close": 270.98,
-      "chg": -13.04,
-      "chg_pct": -4.59
+      "close": 273.67,
+      "chg": 2.69,
+      "chg_pct": 0.99
     },
     "breadth": {
       "b50": 47.52,
       "b200": 44.55
     },
     "fear": {
-      "value": 21,
+      "value": 22,
       "label": "Extreme Fear"
     },
     "main": "選別",
     "move": "閉じる",
-    "note": "参加50 47.52%（48未満で閉じる）。地合いは選別。帯で反転。",
+    "note": "参加50 未取得（前回47.52）。48-52帯で維持し閉じる。地合いは選別。",
     "one": "NONE",
     "watch": {
       "symbol": "AMZN",
       "name": "Amazon.com",
-      "close": 260.21,
-      "chg": -5.82,
+      "close": 259.30,
+      "chg": -0.91,
       "score": 7,
-      "from_hi": 9.4,
+      "from_hi": 9.7,
       "status": "起点近し",
-      "why": "合格7かつ高値から約9.40%。市場閉じる。",
+      "why": "合格7かつ高値から約9.7%。市場閉じる。",
       "checks": [
         {"label": "株価>150&200", "ok": true},
         {"label": "150>200", "ok": true},
@@ -62,6 +62,7 @@
     {"asof": "2026-11-02", "qqq": 681.09, "qqq_chg": -1.36, "iwm": 279.14, "iwm_chg": -0.07, "b50": 53.46, "b200": 56.43, "fg": 23, "fg_label": "Extreme Fear", "main": "選別", "move": "開く", "pass7": 2, "on": 1, "near": 2},
     {"asof": "2026-11-03", "qqq": 685.28, "qqq_chg": 0.62, "iwm": 279.79, "iwm_chg": 0.23, "b50": 49.0, "b200": 53.5, "fg": 19, "fg_label": "Extreme Fear", "main": "先細り", "move": "開く", "pass7": 5, "on": 2, "near": 3},
     {"asof": "2026-11-04", "qqq": 691.95, "qqq_chg": 0.97, "iwm": 284.02, "iwm_chg": 1.51, "b50": 54.45, "b200": 56.43, "fg": 28, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 5, "on": 1, "near": 1},
-    {"asof": "2026-11-05", "qqq": 647.05, "qqq_chg": -6.49, "iwm": 270.98, "iwm_chg": -4.59, "b50": 47.52, "b200": 44.55, "fg": 21, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1}
+    {"asof": "2026-11-05", "qqq": 647.05, "qqq_chg": -6.49, "iwm": 270.98, "iwm_chg": -4.59, "b50": 47.52, "b200": 44.55, "fg": 21, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1},
+    {"asof": "2026-11-06", "qqq": 656.10, "qqq_chg": 1.40, "iwm": 273.67, "iwm_chg": 0.99, "b50": 47.52, "b200": 44.55, "fg": 22, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1}
   ]
 }

@@ -1,43 +1,43 @@
 {
   "desk": {
-    "asof": "2026-11-09",
-    "updated": "2026-11-10 08:11 JST",
+    "asof": "2026-11-10",
+    "updated": "2026-11-11 08:12 JST",
     "qqq": {
-      "close": 679.35,
-      "chg": 23.25,
-      "chg_pct": 3.54
+      "close": 674.76,
+      "chg": -4.59,
+      "chg_pct": -0.68
     },
     "iwm": {
-      "close": 282.51,
-      "chg": 8.84,
-      "chg_pct": 3.23
+      "close": 280.58,
+      "chg": -1.93,
+      "chg_pct": -0.68
     },
     "breadth": {
       "b50": 54.45,
       "b200": 54.45
     },
     "fear": {
-      "value": 31,
+      "value": 33,
       "label": "Fear"
     },
     "main": "選別",
     "move": "開く",
-    "note": "参加50 54.45で52超、帯で反転し開く。地合いは選別。",
-    "one": "AMZN",
+    "note": "参加50 54.45（未取得）で52超、帯で維持し開く。地合いは選別。",
+    "one": "MSFT",
     "watch": {
-      "symbol": "AMZN",
-      "name": "Amazon.com",
-      "close": 266.93,
-      "chg": 7.63,
-      "score": 7,
-      "from_hi": 7.1,
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "close": 533.16,
+      "chg": -12.02,
+      "score": 8,
+      "from_hi": 4.6,
       "status": "点灯",
-      "why": "合格7かつ高値から約7.1%。市場開く。",
+      "why": "合格8かつ高値から約4.6%。市場開く。",
       "checks": [
         {"label": "株価>150&200", "ok": true},
         {"label": "150>200", "ok": true},
         {"label": "200日線約1ヶ月上昇", "ok": true},
-        {"label": "50>150&200", "ok": false},
+        {"label": "50>150&200", "ok": true},
         {"label": "株価>50", "ok": true},
         {"label": "安値+25%", "ok": true},
         {"label": "高値-25%内", "ok": true},
@@ -64,6 +64,7 @@
     {"asof": "2026-11-04", "qqq": 691.95, "qqq_chg": 0.97, "iwm": 284.02, "iwm_chg": 1.51, "b50": 54.45, "b200": 56.43, "fg": 28, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 5, "on": 1, "near": 1},
     {"asof": "2026-11-05", "qqq": 647.05, "qqq_chg": -6.49, "iwm": 270.98, "iwm_chg": -4.59, "b50": 47.52, "b200": 44.55, "fg": 21, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1},
     {"asof": "2026-11-06", "qqq": 656.10, "qqq_chg": 1.40, "iwm": 273.67, "iwm_chg": 0.99, "b50": 47.52, "b200": 44.55, "fg": 22, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1},
-    {"asof": "2026-11-09", "qqq": 679.35, "qqq_chg": 3.54, "iwm": 282.51, "iwm_chg": 3.23, "b50": 54.45, "b200": 54.45, "fg": 31, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 1, "on": 1, "near": 1}
+    {"asof": "2026-11-09", "qqq": 679.35, "qqq_chg": 3.54, "iwm": 282.51, "iwm_chg": 3.23, "b50": 54.45, "b200": 54.45, "fg": 31, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 1, "on": 1, "near": 1},
+    {"asof": "2026-11-10", "qqq": 674.76, "qqq_chg": -0.68, "iwm": 280.58, "iwm_chg": -0.68, "b50": 54.45, "b200": 54.45, "fg": 33, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 6, "on": 2, "near": 2}
   ]
 }

@@ -1,23 +1,23 @@
 {
   "desk": {
-    "asof": "2026-11-11",
-    "updated": "2026-11-12 08:12 JST",
+    "asof": "2026-11-12",
+    "updated": "2026-11-13 08:12 JST",
     "qqq": {
-      "close": 690.38,
-      "chg": 15.62,
-      "chg_pct": 2.31
+      "close": 688.17,
+      "chg": -2.21,
+      "chg_pct": -0.32
     },
     "iwm": {
-      "close": 283.09,
-      "chg": 2.51,
-      "chg_pct": 0.89
+      "close": 278.44,
+      "chg": -4.65,
+      "chg_pct": -1.64
     },
     "breadth": {
       "b50": 55.44,
-      "b200": 54.45
+      "b200": 55.44
     },
     "fear": {
-      "value": 37,
+      "value": 40,
       "label": "Fear"
     },
     "main": "選別",
@@ -27,12 +27,12 @@
     "watch": {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "close": 521.13,
-      "chg": -12.04,
+      "close": 523.00,
+      "chg": 1.875,
       "score": 8,
-      "from_hi": 6.2,
+      "from_hi": 6.5,
       "status": "点灯",
-      "why": "合格8かつ高値から約6.2%。市場開く。",
+      "why": "合格8かつ高値から約6.5%。市場開く。",
       "checks": [
         {"label": "株価>150&200", "ok": true},
         {"label": "150>200", "ok": true},
@@ -66,6 +66,7 @@
     {"asof": "2026-11-06", "qqq": 656.10, "qqq_chg": 1.40, "iwm": 273.67, "iwm_chg": 0.99, "b50": 47.52, "b200": 44.55, "fg": 22, "fg_label": "Extreme Fear", "main": "選別", "move": "閉じる", "pass7": 2, "on": 0, "near": 1},
     {"asof": "2026-11-09", "qqq": 679.35, "qqq_chg": 3.54, "iwm": 282.51, "iwm_chg": 3.23, "b50": 54.45, "b200": 54.45, "fg": 31, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 1, "on": 1, "near": 1},
     {"asof": "2026-11-10", "qqq": 674.76, "qqq_chg": -0.68, "iwm": 280.58, "iwm_chg": -0.68, "b50": 54.45, "b200": 54.45, "fg": 33, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 6, "on": 2, "near": 2},
-    {"asof": "2026-11-11", "qqq": 690.38, "qqq_chg": 2.31, "iwm": 283.09, "iwm_chg": 0.89, "b50": 55.44, "b200": 54.45, "fg": 37, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 6, "on": 2, "near": 2}
+    {"asof": "2026-11-11", "qqq": 690.38, "qqq_chg": 2.31, "iwm": 283.09, "iwm_chg": 0.89, "b50": 55.44, "b200": 54.45, "fg": 37, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 6, "on": 2, "near": 2},
+    {"asof": "2026-11-12", "qqq": 688.17, "qqq_chg": -0.32, "iwm": 278.44, "iwm_chg": -1.64, "b50": 55.44, "b200": 55.44, "fg": 40, "fg_label": "Fear", "main": "選別", "move": "開く", "pass7": 6, "on": 2, "near": 2}
   ]
 }

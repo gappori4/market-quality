@@ -1,1 +1,28 @@
-TOO_LARGE_USE_FILE
+{
+  "meta": {
+    "fetched_at_utc": "2026-11-12T23:12:00Z",
+    "purpose": "sector etfs daily bars and etf7 close confirmations"
+  },
+  "sector_etfs_daily_bars": {
+    "XLB": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 52.34, "volume": 9567105, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLC": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 0, "volume": 0, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLE": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 64.33, "volume": 26001927, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLF": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 58.21, "volume": 22012269, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLI": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 169.44, "volume": 6413260, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLK": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 173.77, "volume": 9928495, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLP": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 0, "volume": 0, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLRE": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 44.36, "volume": 5661817, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLU": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 0, "volume": 0, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLV": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 0, "volume": 0, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]},
+    "XLY": {"bars_count": 25, "latest_confirmed_date": "2026-11-12", "bars": [{"date": "2026-11-12", "close": 0, "volume": 0, "adjusted": "UNKNOWN", "source": "webull___get_stock_bars (D, RTH, real_time_required=false)"}]}
+  },
+  "etf7_close_confirmations": [
+    {"symbol": "SPY", "regular_session_close": 757.12, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "QQQ", "regular_session_close": 688.17, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "DIA", "regular_session_close": 522.47, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "IWM", "regular_session_close": 278.44, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "SOXX", "regular_session_close": 154.99, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "USO", "regular_session_close": 146.07, "target_date": "2026-11-12", "source_item": "close"},
+    {"symbol": "GLD", "regular_session_close": 354.89, "target_date": "2026-11-12", "source_item": "close"}
+  ]
+}

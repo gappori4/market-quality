@@ -1,38 +1,38 @@
 {
   "desk": {
-    "asof": "2026-11-24",
-    "updated": "2026-11-25 08:11 JST",
+    "asof": "2026-11-25",
+    "updated": "2026-11-26 08:12 JST",
     "qqq": {
-      "close": 638.10,
-      "chg": -12.93,
-      "chg_pct": -1.99
+      "close": 633.93,
+      "chg": -4.17,
+      "chg_pct": -0.65
     },
     "iwm": {
-      "close": 267.14,
-      "chg": 1.40,
-      "chg_pct": 0.53
+      "close": 268.85,
+      "chg": 1.71,
+      "chg_pct": 0.64
     },
     "breadth": {
       "b50": 40.59,
       "b200": 41.58
     },
     "fear": {
-      "value": 17,
+      "value": 15,
       "label": "Extreme Fear"
     },
     "main": "先細り",
     "move": "閉じる",
-    "note": "参加50 40.59で48%未満、帯で閉じるを維持。地合いは先細り。",
+    "note": "参加50 40.59で48%未満、帯で閉じるを維持。地合いは先細り。breadth未取得、前回値維持。Webull不可。",
     "one": "AAPL",
     "watch": {
       "symbol": "AAPL",
       "name": "Apple",
-      "close": 354.07,
-      "chg": 4.99,
+      "close": 355.58,
+      "chg": 1.51,
       "score": 7,
       "from_hi": 1.87,
       "status": "型待ち",
-      "why": "合格7かつ高値から約1.9%。市場閉じるため点灯せず。",
+      "why": "合格7かつ高値から約1.9%。市場閉じるため点灯せず。未取得の数字あり、前回値維持。",
       "checks": [
         {"label": "株価>150&200", "ok": true},
         {"label": "150>200", "ok": true},
@@ -75,6 +75,7 @@
     {"asof": "2026-11-19", "qqq": 645.04, "qqq_chg": -2.19, "iwm": 264.22, "iwm_chg": -2.18, "b50": 50.49, "b200": 53.46, "fg": 19, "fg_label": "Extreme Fear", "main": "選別", "move": "開く", "pass7": 1, "on": 0, "near": 0},
     {"asof": "2026-11-20", "qqq": 608.45, "qqq_chg": -5.67, "iwm": 256.61, "iwm_chg": -2.88, "b50": 32.67, "b200": 37.62, "fg": 10, "fg_label": "Extreme Fear", "main": "冷え", "move": "閉じる", "pass7": 1, "on": 0, "near": 1},
     {"asof": "2026-11-23", "qqq": 651.03, "qqq_chg": 42.58, "iwm": 265.74, "iwm_chg": 9.13, "b50": 41.58, "b200": 42.57, "fg": 17, "fg_label": "Extreme Fear", "main": "先細り", "move": "閉じる", "pass7": 1, "on": 0, "near": 1},
-    {"asof": "2026-11-24", "qqq": 638.10, "qqq_chg": -12.93, "iwm": 267.14, "iwm_chg": 1.40, "b50": 40.59, "b200": 41.58, "fg": 17, "fg_label": "Extreme Fear", "main": "先細り", "move": "閉じる", "pass7": 1, "on": 0, "near": 1}
+    {"asof": "2026-11-24", "qqq": 638.10, "qqq_chg": -12.93, "iwm": 267.14, "iwm_chg": 1.40, "b50": 40.59, "b200": 41.58, "fg": 17, "fg_label": "Extreme Fear", "main": "先細り", "move": "閉じる", "pass7": 1, "on": 0, "near": 1},
+    {"asof": "2026-11-25", "qqq": 633.93, "qqq_chg": -4.17, "iwm": 268.85, "iwm_chg": 1.71, "b50": 40.59, "b200": 41.58, "fg": 15, "fg_label": "Extreme Fear", "main": "先細り", "move": "閉じる", "pass7": 1, "on": 0, "near": 1}
   ]
 }
